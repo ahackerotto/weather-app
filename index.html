@@ -47,10 +47,14 @@
           </div>
           <div class="row">
             <div class="col-6">
-              <div class="clearfix weather-temperature">
-                <img src="" alt="Clear" id="icon" class="float-left" />
-                <div class="float-left">
+              <div class="d-flex weather-temperature">
+                <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" id="icon"/>
+               <div>
                   <strong id="temperature"></strong
+                  ><span class="units"> 
+                    ><a href="#" id="celsius-link" class="active">°C </a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  >
                   ><span class="units"> °C</span>
                 </div>
               </div>
@@ -63,13 +67,12 @@
             </div>
           </div>
           <div class="weather-forecast" id="forecast"></div>
-        </body>
+        </div>
         <small>
           <a href="https://github.com/ahackerotto/weather-app.git" target="_blank">Open-source code</a> by Alisa
         </small>
-        </div>
         </div> 
- 
+      </div>
  <script src="src/index.js"></script>
 </body>
 </html>
